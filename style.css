@@ -1,0 +1,102 @@
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #f4f9fc;
+    color: #033;
+}
+
+.header {
+    background: linear-gradient(135deg, #0f4c75, #3282b8);
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    color: #0f4c75;
+}
+
+.hint {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.analyze-btn {
+    grid-column: 1 / -1;
+    padding: 15px;
+    font-size: 1.1em;
+    background: #0f4c75;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.analyze-btn:hover {
+    background: #3282b8;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #e3eef5;
+}
+
+/* Processing Page */
+
+.processing-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid #cce7f0;
+    border-top: 6px solid #0f4c75;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+.hidden {
+    display: none;
+}
+
+.diagnosis {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.positive {
+    color: #b00020;
+}
+
+.download-btn {
+    text-decoration: none;
+    padding: 12px 20px;
+    background: #0f4c75;
+    color: white;
+    border-radius: 6px;
+}

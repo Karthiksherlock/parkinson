@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voice-Based Parkinson’s Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>Voice-Based Analysis of Parkinson’s Disease</h1>
+    <p>
+        This system analyzes human voice signals using machine learning models
+        to assist in detecting Parkinson’s disease through acoustic biomarkers.
+    </p>
+</header>
+
+<main class="container">
+
+    <section class="card">
+        <h2>Upload WAV Audio File</h2>
+        <input type="file" accept=".wav">
+        <p class="hint">Only .wav files are supported</p>
+    </section>
+
+    <section class="card">
+        <h2>Record Live Audio</h2>
+        <button id="start">Start Recording</button>
+        <button id="stop" disabled>Stop Recording</button>
+        <p class="hint">Recording will be processed after stopping</p>
+    </section>
+
+    <button class="analyze-btn" onclick="goToProcessing()">
+        Analyze Voice Sample
+    </button>
+
+</main>
+
+<footer>
+    <p>Educational & Research Use Only — Not for Medical Diagnosis</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Processing Voice Sample</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="processing-container">
+    <div id="loader">
+        <div class="spinner"></div>
+        <h2>Processing Audio Sample...</h2>
+        <p>Extracting features and running ML inference</p>
+    </div>
+
+    <div id="result" class="hidden">
+        <h2>Analysis Result</h2>
+        <p class="diagnosis positive">
+            Parkinson’s Disease Detected
+        </p>
+
+        <a class="download-btn" href="#" download>
+            Download Feature Extraction Report
+        </a>
+    </div>
+</div>
+
+<script>
+    setTimeout(() => {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("result").classList.remove("hidden");
+    }, 3000);
+</script>
+
+</body>
+</html>
